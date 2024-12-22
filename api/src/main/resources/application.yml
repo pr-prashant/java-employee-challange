@@ -1,2 +1,7 @@
 spring.application.name: employee-api
 server.port: 8111
+
+url:
+  baseUrl: "http://localhost:8112"
+  employee: "${url.baseUrl}/api/v1/employee"
+  employeeById: "${url.baseUrl}/api/v1/employee/%s"
